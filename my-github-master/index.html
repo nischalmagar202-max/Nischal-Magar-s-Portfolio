@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - All Tasks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        .tasks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .task-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .task-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .task-card h2 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .task-card p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .task-link {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .task-link:hover {
+            background: #f0f0f0;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+
+        .github-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border-left: 4px solid #667eea;
+        }
+
+        .github-info h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .github-info p {
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Nischal Magar's Portfolio</h1>
+        <p class="subtitle">A collection of web development projects</p>
+
+        <div class="tasks-grid">
+            <!-- Task 1: Portfolio -->
+            <div class="task-card">
+                <h2>📋 Task 1</h2>
+                <p><strong>Personal Portfolio</strong></p>
+                <p>My professional portfolio showcasing education, skills, hobbies, and experience as a BBA student passionate about web development.</p>
+                <a href="task1/index.html" class="task-link">View Portfolio</a>
+            </div>
+
+            <!-- Task 2: Form -->
+            <div class="task-card">
+                <h2>📝 Task 2</h2>
+                <p><strong>Registration Form</strong></p>
+                <p>A comprehensive registration form with validation, responsive design, and various input fields for user registration.</p>
+                <a href="task2/index.html" class="task-link">View Form</a>
+            </div>
+
+            <!-- Task 3: Products -->
+            <div class="task-card">
+                <h2>🛍️ Task 3</h2>
+                <p><strong>Product Catalog</strong></p>
+                <p>A dynamic product catalog displaying products with pricing information and total price calculation using JavaScript.</p>
+                <a href="task3/index.html" class="task-link">View Products</a>
+            </div>
+        </div>
+
+        <div class="github-info">
+            <h3>🚀 Ready for GitHub Pages</h3>
+            <p>This project is fully compatible with GitHub Pages. Simply push to a GitHub repository and enable GitHub Pages in the settings to host it online. All tasks are accessible from this landing page.</p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Nischal Magar - All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>

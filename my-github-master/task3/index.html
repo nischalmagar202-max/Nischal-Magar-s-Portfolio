@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog - Task 3</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" style="display: inline-block; margin-bottom: 20px; padding: 8px 15px; background: #667eea; color: white; text-decoration: none; border-radius: 5px;">← Back to Home</a>
+        <h1>Product Catalog</h1>
+        
+        <div class="date-display">
+            <p>Today's Date: <span id="currentDate"></span></p>
+        </div>
+        
+        <section class="products-section">
+            <h2>Our Products</h2>
+            <div id="productList" class="product-grid">
+                <!-- Products will be displayed here using JavaScript loop -->
+            </div>
+        </section>
+        
+        <section class="summary-section">
+            <h2>Price Summary</h2>
+            <div class="total-box">
+                <p>Total Value of All Products:</p>
+                <span id="totalPrice">$0.00</span>
+            </div>
+        </section>
+    </div>
+    
+    <script src="products.js"></script>
+</body>
+</html>
